@@ -1,0 +1,10 @@
+Terraform is a great fit in a Devops minded orgnization.
+ Release provision and deploy can be done using:
+Git + Jenkins + Terraform + packer (Amazon images) 
+Git + Jenkins + Terraform + Docker (Docker images) 
+=========================
+1)git clone repo: git hub copy  project
+2)packer build create ami(node+app)
+3) git clone repo app(coppy tf fies)
+4)run terraform apply aws_instance,, app demo : app instance launched from AMI created(create new ami) by packer.
+5)maintain terraform state (s3 bucket with terraform state).
